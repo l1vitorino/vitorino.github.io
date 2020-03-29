@@ -32,8 +32,7 @@ font-family:Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
       }
 
-      .html {
-
+      html {
         scroll-behavior: smooth;
       }
 
@@ -42,27 +41,29 @@ font-family:Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">
       <img src="/img/Logo_Vitorino.png" width="95" height="30" alt="">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  
+      <span></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#Sobre-mim">Sobre Léo Vitorino <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#Projetos">Projetos</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#certificados">Certificados<span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <section class="jumbotron text-center">
+  <section class="jumbotron text-center" id="Sobre-mim">
     <div class="container">
       <h1>Leonardo Vitorino Silva</h1>
       <img src="img/LeoVitorino.jpg" width="300" height="300" class="rounded-circle my-3">
@@ -152,6 +153,50 @@ font-family:Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <h2 class="jumbotron-heading text-center"> Certificados</h2>
+      <div class="row my-4" id="certificados">
+        <div class="col-md-6">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="img/C1.jpg"
+              preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+              aria-label="Espaço reservado: miniatura"></img>
+            <div class="card-body">
+              <p style="text-align: center; color: black; text-shadow: 0 0 5px #ffffff, 0 0 10px rgb(255, 255, 255);"> Workshop #2 de Power BI para negócios</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+              
+                  <a  class="btn btn-sm btn-outline-secondary" href="C1.html" role="button">Visualizar</a> </div>
+                  <small class="text-muted">Publicado 29/03/2020</small>
+                </a>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="img/C2.jpg"
+              preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+              aria-label="Espaço reservado: miniatura"></img>
+            <div class="card-body">
+              <p style="text-align: center; color: black; text-shadow: 0 0 5px #ffffff, 0 0 10px rgb(255, 255, 255);">WHITE BELT - LEAN SEIS SIGMA</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+              
+                  <a  class="btn btn-sm btn-outline-secondary" href="C2.html" role="button">Visualizar</a> </div>
+                  <small class="text-muted">Publicado 29/03/2020</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
