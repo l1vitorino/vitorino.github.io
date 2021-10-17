@@ -11769,22 +11769,3 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 14rem;
   height: 14rem;
 }
-
-.img-container{
-  width: 300px;
-  height: 200px;
-  overflow: hidden;
-  border: 2px solid #000;
-}
-
-.img-container img{
-  width: 100%;
-  height: 100%;
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-}
-
-.img-container:hover img{
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
