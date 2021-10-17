@@ -678,7 +678,6 @@ progress {
 .row > * {
   flex-shrink: 0;
   width: 100%;
-  max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
@@ -4902,8 +4901,8 @@ textarea.form-control-lg {
 
 .alert {
   position: relative;
-  padding: 1rem 1rem;
-  margin-bottom: 1rem;
+  padding: 0.2rem 0.2rem;
+  margin-bottom: 0.2rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
@@ -11289,7 +11288,7 @@ p {
 }
 
 .page-section {
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
