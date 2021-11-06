@@ -3,6 +3,8 @@
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4E7DBJF2G"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script async src="js/lightslider.js"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -18,10 +20,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/media-queries.css">
-        <link rel="stylesheet" href="assets/css/carousel.css">
+        <link rel="stylesheet" href="css/lightslider.css">
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/Vitorino.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -32,6 +32,36 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            $(document).ready(function() {
+               $("#content-slider").lightSlider({
+                   loop:true,
+                   keyPress:true
+               });
+           });
+       </script>
+         <style>
+            ul{
+                list-style: none outside none;
+                padding-left: 0;
+                margin: 0;
+            }
+            .demo .item{
+                margin-bottom: 60px;
+            }
+            .content-slider li{
+                background-color: #ed3020;
+                text-align: center;
+                color: #FFF;
+            }
+            .content-slider h3 {
+                margin: 0;
+                padding: 20px 0;
+            }
+            .demo{
+                width: 200px;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -316,38 +346,35 @@
 
         
     <section class="page-section" id="Posts"></section>
+    <div class="item container">
+        <ul id="content-slider" class="content-slider">
+            <li class="CardSlid">
+                    <img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/1.png" class="img-fluid mx-auto d-block shadow" alt="img1">
+            </li>
+            <li class="CardSlid">
+                    <img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/2.png" class="img-fluid mx-auto d-block shadow" alt="img1">
 
-        <div class="top-content">
-        	<div class="container-fluid mt-3 mb-3">
-        		<div id="carousel-example" class="carousel slide" data-ride="carousel">
-        			<div class="carousel-inner row w-100 mx-auto" role="listbox">
-            			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-							<img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/1.png" class="img-fluid mx-auto d-block shadow" alt="img1">
-						</div>
-						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-							<img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/2.png" class="img-fluid mx-auto d-block shadow" alt="img2">
-						</div>
-						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-							<img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/3.png" class="img-fluid mx-auto d-block shadow" alt="img3">
-						</div>
-						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-							<img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/4.png" class="img-fluid mx-auto d-block shadow" alt="img4">
-						</div>
-						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-							<img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/5.png" class="img-fluid mx-auto d-block shadow" alt="img5">
-						</div>
-						</div>
-        			</div>
-        			<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-        		</div>
-        	</div>
+            </li>
+            <li class="CardSlid">
+
+                    <img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/3.png" class="img-fluid mx-auto d-block shadow" alt="img1">
+
+            <li class="CardSlid">
+
+                    <img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/4.png" class="img-fluid mx-auto d-block shadow" alt="img1">
+
+            </li>
+            <li class="CardSlid">
+
+                    <img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/5.png" class="img-fluid mx-auto d-block shadow" alt="img1">
+
+            </li>
+            <li class="CardSlid">
+
+                    <img src="assets/img/Posts/Cartão giratório utilizando HTML e CSS no Power BI/6.png" class="img-fluid mx-auto d-block shadow" alt="img1">
+            </li>
+        </ul>
+    </div>
         </div>
     </section>
         <!-- Team-->
