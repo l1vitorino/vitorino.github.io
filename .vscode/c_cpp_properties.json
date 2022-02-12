@@ -1,0 +1,18 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Pragma": "no-cache",
+        "x-ms-request-id": "6bc567a9-52bc-e595-c21c-11bb3c1b639a;ce550208-3622-f538-96a6-68e12992a82a;5077e55e-b28c-b087-0023-372635cae30d;62c33b32-eb3b-8171-9208-a8f54cf555f0",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Cache-Control": "no-store, no-cache",
+        "Set-Cookie": "ARRAffinity=1bca8a39744f339fb55caacb0d92646bb794d2618364fef0557cb4cfa391ca37;Path=/;HttpOnly;Secure;Domain=office365-ne.azconn-ne-01.p.azurewebsites.net,ARRAffinitySameSite=1bca8a39744f339fb55caacb0d92646bb794d2618364fef0557cb4cfa391ca37;Path=/;HttpOnly;SameSite=None;Secure;Domain=office365-ne.azconn-ne-01.p.azurewebsites.net",
+        "Timing-Allow-Origin": "*",
+        "x-ms-apihub-cached-response": "true",
+        "x-ms-apihub-obo": "true",
+        "Date": "Wed, 02 Feb 2022 01:40:26 GMT",
+        "Content-Length": "0",
+        "Expires": "-1"
+    }
+}
