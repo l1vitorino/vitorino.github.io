@@ -1,842 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4E7DBJF2G"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script async src="js/lightslider.js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-H4E7DBJF2G');
-    </script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Vitorino</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="css/lightslider.css">
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/Vitorino.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <style>
-        ul {
-            list-style: none outside none;
-            padding-left: 0;
-            margin: 0;
-        }
-
-        .demo .item {
-            margin-bottom: 60px;
-        }
-
-        .content-slider li {
-            text-align: center;
-            color: #FFF;
-        }
-
-        .content-slider h3 {
-            margin: 0;
-            padding: 20px 0;
-        }
-
-        .demo {
-            width: 400px;
-        }
-    </style>
-</head>
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="index.html#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ms-1"></i>
-            </button>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Leonardo Vitorino</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Leonardo Vitorino</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Certificados</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiências</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educação</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="container">
-            <img src="assets\img\team\LeoVitorino.png" width="300" height="300">
-            <div class="masthead-subheading">Bem-vindo ao meu portfólio!</div>
-            <div class=" mt-3" class="container">
-                <div class="text-center">
-                    <div class="text-white-50"> Profissional certificado pela Microsoft e com mais de dois anos de
-                        experiência em business intelligence, entendendo negócios e desenvolvendo soluções que atendam a
-                        plenitude da necessidade informacional para tomada de decisão de mais de 8 mil usuários,
-                        entremeada à visão de proporcionar a mais eficiente solução e implantação de BI nos setores e
-                        realizar a coleta e análise de requisitos para desenvolver e oferecer suporte a soluções do
-                        Microsoft Power BI, Oracle SQL, Pentaho e Python.</div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-    <!-- Portfolio Grid-->
-    <section class="page-section bg-light" id="portfolio">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Portfólio</h2>
-                <h3 class="section-subheading text-muted"> </h3>
-            </div>
-            <div class="row text-center">
-                <i class=""></i>
-
-
-                <div class="col-lg-4 col-sm-6">
-                    <!-- Portfolio item 11-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal11">
-                            <div class="portfolio-hover rounded">
-                                <div class="portfolio-hover-content "><i class="fas fa-chart-bar fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid rounded" src="assets\img\Dashboard/cltvspj.jpg" alt="..." />
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Leonardo
+                        <span class="text-secondary">Vitorino</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Data Engineer · (11) 94180-5457 ·
+                        <a href="mailto:leonardo.vitorino701@gmail.com
+                        ">leonardo.vitorino701@gmail.com
                         </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">CLT vs PJ
-                            </div>
-                            <div class="portfolio-caption-subheading text-muted">Power BI | 23/01/2022</div>
-                        </div>
+                    </div>
+                    <p class="lead mb-5">Sou um profissional com paixão por dados (tecnologia), pessoas e processos. Minha missão é democratizar o acesso a dados e empoderar as áreas de negócio, sempre com foco em agregar valor estratégico a companhia.</p>
+                    <div class="mb-5"</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                    </ul>
+                </div>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/leonardo-vitorino/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/l1vitorino"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
+            </section>
+            <hr class="m-0" />
 
 
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 18-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal18">
-                            <div class="portfolio-hover rounded">
-                                <div class="portfolio-hover-content"><i class="fas fa-chart-bar fa-3x"></i></div>
+
+
+                    <!-- Section-->
+                    <section class="resume-section" id="portfolio">
+                        <div class="resume-section-content">
+                            <h2 class="mb-5">Projetos</h2>
+                            <div class="subheading">Data Engineer</div>
+                        <div class="container px-4 px-lg-5 mt-5">
+                            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start">
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <!-- Product image-->
+                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div>
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">Fancy Product</h5>
+                                            </div>
+                                        </div>
+                                        <!-- Product actions-->
+                                    </div>
+                                </div>
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <!-- Product image-->
+                                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div>
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">Fancy Product</h5>
+                                            </div>
+                                        </div>
+                                        <!-- Product actions-->
+                                    </div>
+                                </div>
                             </div>
-                            <img class="img-fluid rounded" src="assets\img\Dashboard/Whatsapp.jpg" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Análise de Whatsapp</div>
-                            <div class="portfolio-caption-subheading text-muted">Power BI | 27/09/21</div>
                         </div>
+
+                            <!-- Section-->
+                                <div class="subheading">DataViz (21 Projetos)</div>
+                                <div class="container px-4 px-lg-5 mt-5">
+                                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start">
+                                        
+                                        <div class="col mb-5">
+                                            <a href="https://www.google.com" target="_blank" style="text-decoration: none; color: inherit;">
+                                            <div class="card h-100">
+                                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 2.8rem">Power BI</div>
+                                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">➜</div>
+                                                <!-- Product image-->
+                                                <img class="card-img-top" src="assets/img/DataViz/Servicos.jpg" alt="..." />
+                                                <!-- Product details-->
+                                                <div class="card-body">
+                                                    <div>
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder text-center">Prestador de Serviços</h5>
+                                                    </div>
+                                                </div>
+                                                <!-- Product actions-->
+                                            </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col mb-5">
+                                            <a href="https://www.google.com" target="_blank" style="text-decoration: none; color: inherit;">
+                                            <div class="card h-100">
+                                                <!-- Sale badge-->
+                                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 2.8rem">Power BI</div>
+                                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">➜</div>
+                                                <!-- Product image-->
+                                                <img class="card-img-top" src="assets/img/DataViz/PDDash.jpg" alt="..." />
+                                                <!-- Product details-->
+                                                <div class="card-body">
+                                                    <div>
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder text-center">Financeiro PD</h5>
+                                                    </div>
+                                                </div>
+                                                <!-- Product actions-->
+                                            </div>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="col mb-5">
+                                            <a href="https://www.google.com" target="_blank" style="text-decoration: none; color: inherit;">
+                                            <div class="card h-100">
+                                                <!-- Sale badge-->
+                                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 2.8rem">Power BI</div>
+                                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">➜</div>
+                                                <!-- Product image-->
+                                                <img class="card-img-top" src="assets/img/DataViz/Bootcamp.jpg" alt="..." />
+                                                <!-- Product details-->
+                                                <div class="card-body">
+                                                    <div>
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder text-center">Financeiro HPN</h5>
+                                                    </div>
+                                                </div>
+                                                <!-- Product actions-->
+                                            </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col mb-5">
+                                            <a href="https://www.google.com" target="_blank" style="text-decoration: none; color: inherit;">
+                                            <div class="card h-100">
+                                                <!-- Sale badge-->
+                                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 2.8rem">Power BI</div>
+                                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">➜</div>
+                                                <!-- Product image-->
+                                                <img class="card-img-top" src="assets/img/DataViz/DRE.jpg" alt="..." />
+                                                <!-- Product details-->
+                                                <div class="card-body">
+                                                    <div>
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder text-center">DRE</h5>
+                                                    </div>
+                                                </div>
+                                                <!-- Product actions-->
+                                            </div>
+                                            </a>
+                                        </div>
+
+                            </section>
+
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experiências</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Analista de BI Sênior LATAM</h3>
+                            <div class="subheading mb-3">The Hershey Company</div>
+                            <p>• Liderança do pilar de Soluções Digitais, responsável por desenvolver soluções de dados 
+                                e promover a cultura de dados no Brasil e América Latina. </br>
+                                • Implementação da plataforma de dados internacional da Hershey no Brasil, alinhando 
+                                estratégias de dados globais com necessidades regionais. </br>
+                                • Atuação como embaixador da jornada de dados, liderando treinamentos, bootcamps e 
+                                palestras para capacitar colaboradores na área de BI.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-secondary">Out 2024 - Presente</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Analista de BI Pleno</h3>
+                            <div class="subheading mb-3">The Hershey Company</div>
+                            <p>• Fundação e estruturação do pilar de Soluções Digitais, criando padrões e descobrindo 
+                                talentos internos. </br>
+                                • Extração e tratamento de dados para criação de dashboards estratégicos para as 
+                                operações no Brasil, América Latina e Estados Unidos.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-secondary">Mar 2023 - Out 2024</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Analista de BI Pleno</h3>
+                            <div class="subheading mb-3">Dataside</div>
+                            <p>• Desenvolvimento de soluções de dados para grandes clientes, incluindo Renner, onde 
+                                atuei em um dos maiores projetos de Supply Chain com o objetivo de reduzir 
+                                substancialmente o Lead Time de entrega por meio de insights estratégicos. </br>
+                                • Realização de análises avançadas para a Unilever, gerando insights sobre sell-in e sell
+                                out, e tratamento de uma base massiva com mais de 5 bilhões de linhas no Databricks, 
+                                promovendo decisões informadas e ágeis.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-secondary">Fev 2022 - Mar 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Analista de BI Pleno</h3>
+                            <div class="subheading mb-3">Stefanini Group</div>
+                            <p>• Atuação na Petrobras como responsável por extração de dados utilizando Pentaho para 
+                                projetos de People Analytics, democratizando dados para mais de 8.000 usuários por meio 
+                                de RLS (Row-Level Security).</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-secondary">Jul 2021 - Mar 2022</span></div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 20-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal20">
-                            <div class="portfolio-hover rounded">
-                                <div class="portfolio-hover-content"><i class="fas fa-chart-bar fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid rounded" src="assets\img\Dashboard/Servicos.jpg" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Prestador de Serviços</div>
-                            <div class="portfolio-caption-subheading text-muted">Power BI | 15/07/21</div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Educação</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Anhembi Morumbi</h3>
+                            <div class="subheading mb-3">Graduação em Big Data e Inteligência Analítica</div>
                         </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
                     </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Etec</h3>
+                            <div class="subheading mb-3">Técnico em Logística</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                    </div>
+
                 </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <!-- Portfolio item 13-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal13">
-                            <div class="portfolio-hover rounded">
-                                <div class="portfolio-hover-content"><i class="fas fa-chart-bar fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid rounded" src="assets\img\Dashboard/PDDash.jpg" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Financeiro PD
-                            </div>
-                            <div class="portfolio-caption-subheading text-muted">Power BI | 17/01/2021</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 10-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal10">
-                            <div class="portfolio-hover rounded">
-                                <div class="portfolio-hover-content"><i class="fas fa-chart-bar fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid rounded" src="assets\img\Dashboard/Bootcamp.jpg" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Financeiro HPN
-                            </div>
-                            <div class="portfolio-caption-subheading text-muted">Power BI | 11/11/2020</div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-sm-6">
-                    <!-- Portfolio item 20-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal20">
-                            <div class="portfolio-hover rounded">
-                                <div class="portfolio-hover-content "><i class="fas fa-chart-bar fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid rounded" src="assets\img\Dashboard/DRE.jpg" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">DRE
-                            </div>
-                            <div class="portfolio-caption-subheading text-muted">Power BI | 17/09/2020</div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="Portfolio.html#portfolio">
-                    <button type="button" class="btn btn-primary position-relative  mt-4">
-                        Ver todos os projetos
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            21
-                            <span class="visually-hidden">unread messages</span>
-                        </span>
-                    </button>
-                </a>
-
-            </div>
-
-
-
-
-    </section>
-
-
-    <!-- About-->
-    <section class="page-section" id="about">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Sobre</h2>
-                <h3 class="section-subheading text-muted"> </h3>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>Mar 2022 - Hoje</h4>
-                            <h4 class="subheading">Dataside</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Entender negócios e desenvolver soluções de Business Intelligence que
-                                atendam a plenitude da necessidade informacional para tomada de decisão de mais de 8 mil
-                                usuários, entremeada à visão de proporcionar a mais eficiente solução e implantação de
-                                BI nos setores.
-                                Realizar a coleta e análise de requisitos para desenvolver e oferecer suporte a soluções
-                                do Microsoft Power BI, Oracle SQL e Pentaho.
-                                Definir indicadores-chave de desempenho (KPI)
-                                </BR> Cursando Big Data e Inteligência Análitica na Universidade Anhembi Morumbi</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>Jul 2021 - Mar 2022</h4>
-                            <h4 class="subheading">Petrobras - Stefanini</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Realizar a coleta e análise de requisitos para desenvolver e oferecer suporte a soluções
-                                do Microsoft Power BI, Oracle SQL e Pentaho.
-                                Definir indicadores-chave de desempenho (KPI)
-                                </p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>Ago 2019 - Jul 2021</h4>
-                            <h4 class="subheading">The Hershey Company</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">•Criação de Dashboards com KPIs de fluxos personalizados e dados da
-                                produção que auxiliarão a tomada de decisão da Hershey do Brasil;
-                                </BR>•Desenvolver aplicativos em PowerApps ou Forms para digitalizar e melhorar os
-                                fluxos de tarefas;
-                                </BR>•Atuação nos treinamentos dos colaboradores para nivelamento das ferramentas
-                                digitais e metodologia Lean;
-                                </BR>•Auxiliar na gestão da metodologia Lean na planta.
-                                </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>Jan 2018 - Ago 2019</h4>
-                            <h4 class="subheading">Tribunal de Justiça de São Paulo</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">•Criação de sistemas no excel para auxiliar o andamento dos processos
-                                criminais.
-                                </BR>•Auxiliar no andamento dos processos, nas atividades administrativas do ofício
-                                criminal e atendimento ao público.
-                                </p>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <h4>
-                            Minha
-                            <br />
-                            Trajetória
-                            <br />
-                            !
-                        </h4>
-                    </div>
-                </li>
-            </ul>
+            </section>
+            <hr class="m-0" />
         </div>
-    </section>
-
-    <!-- Skilss-->
-    <section class="page-section" id="services">
-        <div class="container">
-            <!-- Power BI-->
-            <h2 class="section-subheading text-muted">Power BI</h2>
-            <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">90%</div>
-            </div>
-            <h3 class="section-subheading text-muted">Dax</h3>
-            <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 95%;" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">95%</div>
-            </div>
-            <h3 class="section-subheading text-muted">Storytelling com Dados</h3>
-            <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">90%</div>
-            </div>
-            <h3 class="section-subheading text-muted">Power Query (M)</h3>
-            <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">85%</div>
-            </div>
-
-            <!--inteligência de negócios-->
-            <h2 class="mt-5 section-subheading text-muted">Inteligência de negócios</h2>
-            <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 88%;" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">88%</div>
-            </div>
-
-            <!--SQL-->
-            <h2 class="mt-5 section-subheading text-muted">SQL</h2>
-            <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">85%</div>
-            </div>
-
-
-            <!--Python-->
-            <h2 class="mt-5 section-subheading text-muted">Python</h2>
-            <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">60%</div>
-            </div>
-            <div class="text-center mt-4">
-                <div class=""> Estou estudando ferramentas(Scala, Hadoop, Spark, BigQuery, etc) e conceitos da
-                    engenharia de dados.</div>
-            </div>
-        </div>
-
-    </section>
-
-
-    
-    <section class="page-section bg-light" id="team">
-        <div class="container">
-            <!-- Gallery -->
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Certificados (2)</h2>
-                <h3 class="section-subheading text-muted"> </h3>
-            </div>
-            <div class="row">
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/CertificadosMS/DA100.jpg" class="w-100 shadow-1-strong rounded mb-4 " alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/CertificadosMS/PL900.jpg" class="w-100 shadow-1-strong rounded mb-4 " alt="" />
-                </div>
-
-            <!-- Gallery -->
-        </div>
-    </section>
-<!--
-    <section class="page-section bg-light" id="team">
-        <div class="container">
-
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Livros (3)</h2>
-                <div class="text-center mt-4">
-                    <div class=""> SELECT LV.IMAGE FROM LIVROS LV WHERE YEAR(LV.DATA_LEITURA) >= 2022</div>
-                </div>
-                <h3 class="section-subheading text-muted"> </h3>
-            </div>
-            <div class="row">
-
-                <div class="col-lg-2 col-sm-6 mb-2">
-                    <img src="assets/img/Livros/SWD.jpg" class="w-10 shadow-1-strong rounded mb-4 " alt="" />
-                </div>
-                <div class="col-lg-2 col-sm-6 mb-2">
-                    <img src="assets/img/Livros/EQD.jpg" class="w-10 shadow-1-strong rounded mb-4 " alt="" />
-                </div>
-                <div class="col-lg-2 col-sm-6 mb-2">
-                    <img src="assets/img/Livros/ADMPPE.jpg" class="w-10 shadow-1-strong rounded mb-4 " alt="" />
-                </div>
--->
-
-            <!-- Gallery -->
-        </div>
-    </section>
-
-    <section class="page-section bg-light" id="team">
-        <div class="container">
-            <!-- Gallery -->
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Cursos (32)</h2>
-                <h3 class="section-subheading text-muted"> </h3>
-            </div>
-            <div class="row">
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C36.jpg" class="w-100 shadow-1-strong rounded mb-4 " alt="" />
-                </div>
-    
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C35.jpg" class="w-100 shadow-1-strong rounded mb-4 " alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C34.jpg" class="w-100 shadow-1-strong rounded mb-4 " alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C32.jpg" class="w-100 shadow-1-strong rounded mb-4 " alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-
-                    <img src="assets/img/Certificados/C31.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-
-                    <img src="assets/img/Certificados/C30.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C29.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C28.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C27.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C26.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C25.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C24.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C23.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C33.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/pd2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                <img src="assets/img/Certificados/Agilidade.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                        alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/figma2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/Figma.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C14.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/c13.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C12.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C11.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C10.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C9.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C8.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/c7.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/c6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-                </div>
-
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img src="assets/img/Certificados/C1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
-
-                </div>
-            </div>
-            <!-- Gallery -->
-        </div>
-    </section>
-
-    <!-- Footer-->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Vitorino 2021</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/leonardo-vitorino/"><i
-                            class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Portfolio Modals-->
-
-
-    <!-- Portfolio item 20 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="row justify-content-center">
-                    <div class="container mt-4">
-                        <div class="text-center">
-                            <div class="row">
-                                <!-- Project details-->
-                                <h3 class="text-uppercase">Prestador de Serviços</h3>
-                                <p class="item-intro text-muted"> </p>
-                                <iframe width="1240" height="710"
-                                    src="https://app.powerbi.com/view?r=eyJrIjoiNzQ1MGVlYzktNmIwZS00NDY4LWJlNzYtMzVkZDZhMWUxMTE4IiwidCI6Ijk4YWFhODZmLTc1OGYtNGVkYS1hMDUyLTVmNDEyYzMxMzQ4ZSJ9"
-                                    frameborder="0" allowFullScreen="true"></iframe>
-                            </div>
-                            <button class="btn btn-primary mt-4" data-bs-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Fechar o Projeto
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- Portfolio item 18 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="row justify-content-center">
-                    <div class="container mt-4">
-                        <div class="text-center">
-                            <div class="row">
-                                <!-- Project details-->
-                                <h3 class="text-uppercase">Whatsapp</h3>
-                                <p class="item-intro text-muted"> </p>
-                                <iframe width="1240" height="710"
-                                    src="https://app.powerbi.com/view?r=eyJrIjoiNjk1MzMxNTItOTA3Zi00MTJlLWEwYmUtMmZlMDBlNmM1OGE5IiwidCI6Ijk4YWFhODZmLTc1OGYtNGVkYS1hMDUyLTVmNDEyYzMxMzQ4ZSJ9&embedImagePlaceholder=true&pageName=ReportSection"
-                                    frameborder="0" allowFullScreen="true"></iframe>
-                            </div>
-                            <button class="btn btn-primary mt-4" data-bs-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Fechar o Projeto
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <!-- Portfolio item 17 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="row justify-content-center">
-                    <div class="container mt-4">
-                        <div class="text-center">
-                            <div class="row">
-                                <!-- Project details-->
-                                <h3 class="text-uppercase">Frequência</h3>
-                                <p class="item-intro text-muted"> </p>
-                                <iframe width="1240" height="710"
-                                    src="https://app.powerbi.com/view?r=eyJrIjoiNjk1MzMxNTItOTA3Zi00MTJlLWEwYmUtMmZlMDBlNmM1OGE5IiwidCI6Ijk4YWFhODZmLTc1OGYtNGVkYS1hMDUyLTVmNDEyYzMxMzQ4ZSJ9"
-                                    frameborder="0" allowFullScreen="true"></iframe>
-                            </div>
-                            <button class="btn btn-primary mt-4" data-bs-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Fechar o Projeto
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    <!-- Portfolio item 14 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="row justify-content-center">
-                    <div class="container mt-4">
-                        <div class="text-center">
-                            <div class="row">
-                                <!-- Project details-->
-                                <h3 class="text-uppercase">Savings Projects</h3>
-                                <p class="item-intro text-muted"> </p>
-                                <iframe width="1240" height="710"
-                                    src="https://app.powerbi.com/view?r=eyJrIjoiNzQ1MGVlYzktNmIwZS00NDY4LWJlNzYtMzVkZDZhMWUxMTE4IiwidCI6Ijk4YWFhODZmLTc1OGYtNGVkYS1hMDUyLTVmNDEyYzMxMzQ4ZSJ9"
-                                    frameborder="0" allowFullScreen="true"></iframe>
-                            </div>
-                            <button class="btn btn-primary mt-4" data-bs-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Fechar o Projeto
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-
-
-    <!-- Portfolio item 11 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="row justify-content-center">
-                    <div class="container mt-4">
-                        <div class="text-center">
-                            <div class="row">
-                                <!-- Project details-->
-                                <h3 class="text-uppercase">CLT Vs PJ</h3>
-                                <p class="item-intro text-muted"> </p>
-                                <iframe width="1240" height="710"
-                                    src="https://app.powerbi.com/view?r=eyJrIjoiMWU2Y2U2ZDEtYTg1Ny00ZmY0LThlNWItMjI3Y2Q4MTQ4ZTk5IiwidCI6Ijk4YWFhODZmLTc1OGYtNGVkYS1hMDUyLTVmNDEyYzMxMzQ4ZSJ9"
-                                    frameborder="0" allowFullScreen="true"></iframe>
-                            </div>
-                            <button class="btn btn-primary mt-4" data-bs-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Fechar o Projeto
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <!-- Portfolio item 10 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="row justify-content-center">
-                    <div class="container mt-4">
-                        <div class="text-center">
-                            <div class="row">
-                                <!-- Project details-->
-                                <h3 class="text-uppercase">Vendas HPN</h3>
-                                <p class="item-intro text-muted"> </p>
-                                <iframe width="1240" height="710"
-                                    src="https://app.powerbi.com/view?r=eyJrIjoiNzBjNGU5ZTgtZTg4Zi00NzQ3LWEwZDEtYTNmN2M5MjU0ZGFjIiwidCI6Ijk4YWFhODZmLTc1OGYtNGVkYS1hMDUyLTVmNDEyYzMxMzQ4ZSJ9&embedImagePlaceholder=true&pageName=ReportSection73c3d0a283e20c7656d4"
-                                    frameborder="0" allowFullScreen="true"></iframe>
-                            </div>
-                            <button class="btn btn-primary mt-4" data-bs-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Fechar o Projeto
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <!-- Portfolio item 13 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="row justify-content-center">
-                    <div class="container mt-4">
-                        <div class="text-center">
-                            <div class="row">
-                                <!-- Project details-->
-                                <h3 class="text-uppercase">Fananceiro PD</h3>
-                                <p class="item-intro text-muted"> </p>
-                                <iframe width="1240" height="710"
-                                    src="https://app.powerbi.com/view?r=eyJrIjoiZGY3OTlkM2QtMWRhNS00NWZmLTk5OGEtMzBkZGJhYzllMzljIiwidCI6Ijk4YWFhODZmLTc1OGYtNGVkYS1hMDUyLTVmNDEyYzMxMzQ4ZSJ9&embedImagePlaceholder=true&pageName=ReportSection94955cdf73f168d1280a"
-                                    frameborder="0" allowFullScreen="true"></iframe>
-                            </div>
-                            <button class="btn btn-primary mt-4" data-bs-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Fechar o Projeto
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    <!-- Portfolio item 20 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="row justify-content-center">
-                    <div class="container mt-4">
-                        <div class="text-center">
-                            <div class="row">
-                                <!-- Project details-->
-                                <h3 class="text-uppercase">DRE</h3>
-                                <p class="item-intro text-muted"> </p>
-                                <iframe width="1240" height="710"
-                                    src="https://app.powerbi.com/view?r=eyJrIjoiZGFiNDU2ZjctZDg4ZS00OGE2LWFjODYtMTY2YTk1MDNmYmE5IiwidCI6Ijk4YWFhODZmLTc1OGYtNGVkYS1hMDUyLTVmNDEyYzMxMzQ4ZSJ9&embedImagePlaceholder=true&pageName=ReportSection00f7cf3ed619c707351b"
-                                    frameborder="0" allowFullScreen="true"></iframe>
-                            </div>
-                            <button class="btn btn-primary mt-4" data-bs-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Fechar o Projeto
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-</body>
-
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
