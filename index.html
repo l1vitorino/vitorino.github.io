@@ -277,7 +277,52 @@
                         <div class="flex-shrink-0"><span class="text-secondary">Jul 2019 - Dez 2020</span></div>
                     </div>
 
+                    <div class="container px-4 px-lg-5 mt-5">
+                        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start certificates-gallery">
+                            <script>
+                                // Function to load images from directory
+                                async function loadCertificates() {
+                                    const galleryDiv = document.querySelector('.certificates-gallery');
+                                    
+                                    // Get all images from the Certificados directory
+                                    const certificatesPath = 'assets/img/Certificados/';
+                                    
+                                    // Use fetch to get directory listing
+                                    try {
+                                        const response = await fetch(certificatesPath);
+                                        const files = await response.text();
+                                        
+                                        // Parse image files (assuming .png extension)
+                                        const imageFiles = files.match(/[^\s]+\.(?:png|jpg|jpeg)/g) || [];
+                                        
+                                        imageFiles.forEach(filename => {
+                                            const title = filename.replace(/\.[^/.]+$/, ""); // Remove extension
+                                            const certDiv = document.createElement('div');
+                                            certDiv.className = 'col mb-5';
+                                            certDiv.innerHTML = `
+                                                <div class="card h-100">
+                                                    <img class="card-img-top" src="${certificatesPath}${filename}" 
+                                                        title="${filename}"
+                                                        />
+                                                       ${filename}
+                                                </div>
+                                            `;
+                                            galleryDiv.appendChild(certDiv);
+                                        });
+                                    } catch (error) {
+                                        console.error('Error loading certificates:', error);
+                                    }
+                                }
+        
+                                // Load certificates when document is ready
+                                document.addEventListener('DOMContentLoaded', loadCertificates);
+                            </script>
+                        </div>
+                    </div>
                 </div>
+
+   
+
             </section>
             <hr class="m-0" />
         </div>
