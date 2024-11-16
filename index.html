@@ -72,7 +72,7 @@
                             <h2 class="mb-5">Projetos</h2>
                             <div class="subheading">Data Engineer</div>
                         <div class="container px-4 px-lg-5 mt-5">
-                            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start">
+                            <div class="row gx-4 gx-lg-3 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start">
                                 
                                 
                                 <div class="col mb-5">
@@ -122,7 +122,7 @@
                                     <a href="https://github.com/l1vitorino/Python/blob/main/Binance.ipynb" target="_blank" style="text-decoration: none; color: inherit;">
                                     <div class="card h-100">
                                         <!-- Sale badge-->
-                                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 2.8rem">Kubernetes</div>
+                                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 2.8rem">Python</div>
                                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">➜</div>
                                         <!-- Product image-->
                                         <img class="card-img-top" src="assets/img/DE/Benance.png" alt="..." />
@@ -145,7 +145,7 @@
                             <!-- Section-->
                                 <div class="subheading">DataViz (21 Projetos)</div>
                                 <div class="container px-4 px-lg-5 mt-5">
-                                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start">
+                                    <div class="row gx-4 gx-lg-3 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start">
                                         
                                         <div class="col mb-5">
                                             <a href="https://app.powerbi.com/view?r=eyJrIjoiNzQ1MGVlYzktNmIwZS00NDY4LWJlNzYtMzVkZDZhMWUxMTE4IiwidCI6Ijk4YWFhODZmLTc1OGYtNGVkYS1hMDUyLTVmNDEyYzMxMzQ4ZSJ9" target="_blank" style="text-decoration: none; color: inherit;">
@@ -315,47 +315,383 @@
                         <div class="flex-shrink-0"><span class="text-secondary">Jul 2019 - Dez 2020</span></div>
                     </div>
 
-                    <div class="container px-4 px-lg-5 mt-5">
-                        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start certificates-gallery">
-                            <script>
-                                // Function to load images from directory
-                                async function loadCertificates() {
-                                    const galleryDiv = document.querySelector('.certificates-gallery');
-                                    
-                                    // Get all images from the Certificados directory
-                                    const certificatesPath = 'assets/img/Certificados/';
-                                    
-                                    // Use fetch to get directory listing
-                                    try {
-                                        const response = await fetch(certificatesPath);
-                                        const files = await response.text();
-                                        
-                                        // Parse image files (assuming .png extension)
-                                        const imageFiles = files.match(/[^\s]+\.(?:png|jpg|jpeg)/g) || [];
-                                        
-                                        imageFiles.forEach(filename => {
-                                            const title = filename.replace(/\.[^/.]+$/, ""); // Remove extension
-                                            const certDiv = document.createElement('div');
-                                            certDiv.className = 'col mb-5';
+                    <div class="container px-4 px-lg-1 mt-5">
+                        <h2 class="flex-grow-1 mb-2">Certificados</h2>
+                        <div class="subheading mb-2">Data Engineer</div>
+                        <span class="text-secondary mb-2">*certificados menores e entre Jan/2022 - Ago/2024 não estão catalogados</span>
+                        <div class="row gx-4 gx-lg-1 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-start certificates-gallery">
 
-                                            certDiv.innerHTML = `
-                                                <div class="card h-100">
-                                                    <img class="card-img-top" src="${certificatesPath}${filename}" 
-                                                        title="${filename}"
-                                                        />
-                                                       ${filename}
-                                                </div>
-                                            `;
-                                            galleryDiv.appendChild(certDiv);
-                                        });
-                                    } catch (error) {
-                                        console.error('Error loading certificates:', error);
-                                    }
-                                }
-        
-                                // Load certificates when document is ready
-                                document.addEventListener('DOMContentLoaded', loadCertificates);
-                            </script>
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">30/10/24</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">12h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/301024-SpecializationEngenhariadeDadosAirflow.png" 
+                                    
+                                    />
+                                   Especialização de Apache Airflow
+                            </div>
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">30/10/24</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">15h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/301024-PythonEngenhariadeDados.png" 
+                                    
+                                    />
+                                   Python para Engenharia de Dados
+                            </div>
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">01/10/24</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <img class="card-img-top" src="assets/img/Certificados/011024-DesenvolvimentoDeSoftware.png" 
+                                    
+                                    />
+                                   Fundamentos para o Desenvolvimento de Software
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">30/09/24</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">05h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/300924-FundamentosAirflow.png" 
+                                    
+                                    />
+                                   Fundamentos de Apache Airflow
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">29/09/24</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">21h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/290924-FundamentosApacheSpark.png" 
+                                    
+                                    />
+                                   Fundamentos de Apache Spark
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">25/09/24</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">08h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/250924-FundamentosKubernetes.png" 
+                                    
+                                    />
+                                   Fundamentos de Kubernetes
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">10/08/24</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">09h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/100824-GitHubParaTimesDeDados.png" 
+                                    
+                                    />
+                                   GIT para Times de Dados
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">03/08/24</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">07h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/030824-SQLParaTimesDeDados.png" 
+                                    
+                                    />
+                                   SQL Para Times de dados
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">02/08/24</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">12h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/020824-FundamentosParaEngenhariaDeDados.png" 
+                                    
+                                    />
+                                   Fundamentos para Engenharia de Dados
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">25/10/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">12h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C34.jpg" 
+                                    
+                                    />
+                                   Big Data Fundamentos
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">03/10/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">12h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C32.jpg" 
+                                    
+                                    />
+                                   BigQuery 
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">26/09/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">10h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C31.jpg" 
+                                    
+                                    />
+                                   Oracle: Otimização de consultas
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">26/09/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">10h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C30.jpg" 
+                                    
+                                    />
+                                   Oracle: Análise de ambiente
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">26/09/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">10h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C29.jpg" 
+                                    
+                                    />
+                                   Oracle: Segurança
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">26/09/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">10h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C28.jpg" 
+                                    
+                                    />
+                                   Oracle: Criação e gerenciamento
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">28/08/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">12h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C27.jpg" 
+                                    
+                                    />
+                                   PL/SQL: Packages
+                            </div>
+
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">16/08/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">18h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C26.jpg" 
+                                    
+                                    />
+                                   PL/SQL: Procesures, funções e exceções
+                            </div>
+
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">07/08/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">12h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C25.jpg" 
+                                    
+                                    />
+                                   Oracle: DML
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">07/08/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">16h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C24.jpg" 
+                                    
+                                    />
+                                   Oracle: Projeções, seleções, joins e views
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">06/08/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">10h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C23.jpg" 
+                                    
+                                    />
+                                   Oracle: Manipule e consulte dados
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">07/06/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <img class="card-img-top" src="assets/img/Certificados/C33.jpg" 
+                                    
+                                    />
+                                   Spark: Fundamentos de Big Data
+                            </div>
+
+
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">03/12/20</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">12h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C14.jpg" 
+                                    
+                                    />
+                                   SQL Server: Consultas avançadas
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <img class="card-img-top" src="assets/img/Certificados/C12.jpg" 
+                                    
+                                    />
+                                    SQL Server: Introdução
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="container px-4 px-lg-1 mt-5">
+                        <div class="subheading mb-2">BI, DataViz e outros</div>
+                        <div class="row gx-4 gx-lg-1 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-start certificates-gallery">
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">12/02/22</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">2h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C36.jpg" 
+                                    
+                                    />
+                                   Dax Tools 
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">10/03/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">06h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/Agilidade.jpg" 
+                                    
+                                    />
+                                   Fundamento de agilidade
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">24/01/21</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">10h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/figma2.jpg" 
+                                    
+                                    />
+                                   Figma
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">19/11/20</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">100h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/c13.jpg" 
+                                    
+                                    />
+                                   Power BI Experience
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">07/10/20</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <img class="card-img-top" src="assets/img/Certificados/C11.jpg" 
+                                    
+                                    />
+                                   Bootcamp Power BI
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">09/10/20</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">08h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C10.jpg" 
+                                    
+                                    />
+                                   Power BI Week
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">05/06/20</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">08h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C8.jpg" 
+                                    
+                                    />
+                                   Boas Práticas de Business Intelligence
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">01/04/20</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">20h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C7.jpg" 
+                                    
+                                    />
+                                   Power BI: Black belt
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">03/04/20</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">54h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C3.jpg" 
+                                    
+                                    />
+                                   Power BI para Data Science
+                            </div>
+
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">27/03/20</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">08h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C1.jpg" 
+                                    
+                                    />
+                                   Power BI para negócios
+                            </div>
+
+
+                            <div class="card h-100 col mb-2">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 3.5rem">12/01/20</div>
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">10h</div>
+                                <img class="card-img-top" src="assets/img/Certificados/C2.jpg" 
+                                    
+                                    />
+                                    White Belt - Lean six sigma
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
